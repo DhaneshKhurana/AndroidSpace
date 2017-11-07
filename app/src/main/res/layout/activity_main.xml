@@ -7,16 +7,37 @@
     android:background="@color/colorAccent"
     tools:context="com.dhkhurana.testapp1.MainActivity">
 
-    <TextView
-        android:id="@+id/selectedFoodTxt"
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/loginIdInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Chinese!"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Login Id"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/pwdInput"
+        tools:layout_editor_absoluteX="85dp" />
+
+    <EditText
+        android:id="@+id/pwdInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/signInButton"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.363"
-        app:layout_constraintHorizontal_bias="0.501"/>
+        tools:layout_editor_absoluteX="85dp" />
 </android.support.constraint.ConstraintLayout>
